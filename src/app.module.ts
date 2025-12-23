@@ -27,7 +27,7 @@ import { JwtAuthGuard } from './auth/guards/jwt-auth/jwt-auth.guard';
       inject: [ConfigService],
       useFactory: (config: ConfigService) => ({
         type: 'mysql',
-        host: config.get<string>('DB_HOST'),
+        // host: config.get<string>('DB_HOST'),
         port: config.get<number>('DB_PORT'),
         url: config.get<string>('DATABASE_URL'),
         username: config.get<string>('DB_USER'),
