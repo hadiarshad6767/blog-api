@@ -15,7 +15,8 @@ async function bootstrap() {
       new ClassSerializerInterceptor(app.get(Reflector)),
     );
 
-  const port = process.env.PORT || 3000;
-  await app.listen(port);
+const port = process.env.PORT || 3000;
+await app.listen(port);
+
 }
 bootstrap();
